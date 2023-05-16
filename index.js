@@ -6,6 +6,6 @@ var isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
 var isAndroid = /android/i.test(userAgent);
 
 // Set the appropriate redirect URL based on the device
-var redirectUrl = isAndroid ? "https://apps.apple.com/in/app/voge/id6446778934" : "https://play.google.com/store/apps/details?id=com.voge&hl=en&gl=US";
+var redirectUrl = isIOS ? "https://apps.apple.com/in/app/voge/id6446778934" : "https://play.google.com/store/apps/details?id=com.voge&hl=en&gl=US";
 
 window.location.href = redirectUrl;
